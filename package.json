@@ -14,5 +14,8 @@
     "format:fix": "prettier --write .",
     "test": "vitest run",
     "test:e2e": "vitest run --config vitest.e2e.config.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
   }
 }
