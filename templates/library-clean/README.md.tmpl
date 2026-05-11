@@ -1,0 +1,31 @@
+# {{projectName}}
+
+> TypeScript library scaffolded by [archkit](https://github.com/autosergach/archkit) — Clean Architecture from day one.
+
+## Structure
+
+```
+src/
+├── domain/        # entities, value objects, errors (no framework deps)
+├── application/   # use cases (orchestrate domain via ports)
+├── ports/         # interfaces (what domain needs from outside)
+└── index.ts       # public API
+```
+
+## Usage
+
+```bash
+pnpm install
+pnpm test       # run unit tests
+pnpm build      # compile TypeScript → dist/
+pnpm typecheck  # type-check without emitting
+```
+
+## Example
+
+See `src/application/create-user.ts` for a use case that depends on `UserRepository` port.
+Test (`tests/create-user.test.ts`) shows how to swap the port with an in-memory implementation.
+
+## License
+
+Add your license here.

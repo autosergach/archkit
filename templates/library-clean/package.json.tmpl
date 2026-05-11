@@ -1,0 +1,31 @@
+{
+  "name": "{{packageName}}",
+  "version": "0.0.0",
+  "description": "TypeScript library with Clean Architecture (scaffolded by archkit)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "eslint": "^9",
+    "typescript": "^5.7",
+    "typescript-eslint": "^8",
+    "vitest": "^3.2"
+  }
+}
