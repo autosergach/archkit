@@ -1,0 +1,34 @@
+{
+  "name": "archkit",
+  "version": "0.0.0",
+  "description": "Clean Architecture project generator for TypeScript",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "archkit": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "archkit-core": "workspace:*",
+    "cac": "^6.7.14",
+    "@inquirer/prompts": "^7"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
