@@ -1,6 +1,6 @@
 {
-  "name": "archkit",
-  "version": "0.1.0",
+  "name": "@autosergach/archkit",
+  "version": "0.1.1",
   "description": "Clean Architecture project generator for TypeScript",
   "keywords": [
     "scaffold",
@@ -47,9 +47,11 @@
     "prepublishOnly": "pnpm -w build && pnpm -w test && pnpm -w test:e2e"
   },
   "dependencies": {
-    "archkit-core": "workspace:*",
     "cac": "^6.7.14",
     "@inquirer/prompts": "^7"
+  },
+  "devDependencies": {
+    "archkit-core": "workspace:*"
   },
   "engines": {
     "node": ">=20"

@@ -2,18 +2,24 @@
 
 > Clean Architecture project generator for TypeScript. Scaffold libraries (v0.1) and full-stack apps (v0.2+) with sensible defaults, working tests, and AI-friendly structure.
 
-[![npm](https://img.shields.io/npm/v/archkit.svg)](https://www.npmjs.com/package/archkit)
+[![npm](https://img.shields.io/npm/v/@autosergach/archkit.svg)](https://www.npmjs.com/package/@autosergach/archkit)
 [![CI](https://github.com/autosergach/archkit/actions/workflows/ci.yml/badge.svg)](https://github.com/autosergach/archkit/actions/workflows/ci.yml)
-[![license](https://img.shields.io/npm/l/archkit.svg)](LICENSE)
+[![license](https://img.shields.io/npm/l/@autosergach/archkit.svg)](LICENSE)
 
 ## Quick start
 
 ```bash
-npx archkit create my-lib
+npx @autosergach/archkit create my-lib
 cd my-lib
 pnpm install
 pnpm test
 ```
+
+> **Tip:** install once globally for the short `archkit` command everywhere:
+> ```bash
+> npm install -g @autosergach/archkit
+> archkit create my-lib
+> ```
 
 You get a TypeScript library with:
 
