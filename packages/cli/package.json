@@ -1,7 +1,27 @@
 {
   "name": "archkit",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Clean Architecture project generator for TypeScript",
+  "keywords": [
+    "scaffold",
+    "generator",
+    "cli",
+    "clean-architecture",
+    "typescript",
+    "template",
+    "ddd",
+    "hexagonal"
+  ],
+  "homepage": "https://github.com/autosergach/archkit#readme",
+  "bugs": {
+    "url": "https://github.com/autosergach/archkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autosergach/archkit.git"
+  },
+  "license": "MIT",
+  "author": "Alex Rogov <autosergach@gmail.com> (https://github.com/autosergach)",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,12 +36,15 @@
   },
   "files": [
     "dist",
-    "templates"
+    "templates",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepublishOnly": "pnpm -w build && pnpm -w test && pnpm -w test:e2e"
   },
   "dependencies": {
     "archkit-core": "workspace:*",
@@ -30,5 +53,9 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

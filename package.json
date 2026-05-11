@@ -19,6 +19,7 @@
     "@types/node": "^22",
     "eslint": "^9",
     "eslint-config-prettier": "^9",
+    "execa": "^9",
     "globals": "^15",
     "prettier": "^3.4",
     "tsup": "^8",
