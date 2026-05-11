@@ -16,6 +16,13 @@
     "test:e2e": "vitest run --config vitest.e2e.config.ts"
   },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "@types/node": "^22",
+    "eslint": "^9",
+    "eslint-config-prettier": "^9",
+    "globals": "^15",
+    "prettier": "^3.4",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8",
+    "vitest": "^3.2"
   }
 }
